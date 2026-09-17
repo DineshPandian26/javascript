@@ -1,0 +1,92 @@
+ <!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="container">
+
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+
+    <div id="dateTime"></div>
+
+    <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Search employee name">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <div class="filter-section">
+        <button id="allButton">All</button>
+        <button id="itButton">IT</button>
+        <button id="hrButton">HR</button>
+        <button id="financeButton">Finance</button>
+        <button id="marketingButton">Marketing</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="statistics">
+        <div class="stat-card">
+            <h3 id="employeeCount">Employee Count: 0</h3>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="totalSalary">Total Salary: ₹0</h3>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="averageSalary">Average Salary: ₹0</h3>
+        </div>
+    </div>
+
+    <div id="highestEmployee" class="highest-employee">
+        No salary data
+    </div>
+
+    <h2>Employee List</h2>
+
+    <div id="employeeContainer" class="employee-container"></div>
+
+    <div class="form-section">
+
+        <h2>Add Employee</h2>
+
+        <input type="text" id="name" placeholder="Employee Name">
+
+        <input type="number" id="age" placeholder="Age">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <select id="department">
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+
+        <input type="number" id="salary" placeholder="Salary">
+
+        <button id="addEmployeeButton">Add Employee</button>
+
+        <p id="errorMessage"></p>
+
+    </div>
+
+    <div class="sort-section">
+
+        <h2>Sort Employees</h2>
+
+        <button id="sortNameButton">Sort by Name</button>
+        <button id="sortAgeButton">Sort by Age</button>
+        <button id="sortSalaryButton">Sort by Salary</button>
+
+    </div>
+
+</div>
+
+<script src="./task.js"></script>
+
+</body>
+</html>
